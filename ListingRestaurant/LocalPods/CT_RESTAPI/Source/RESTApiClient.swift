@@ -93,21 +93,6 @@ open class RESTApiClient: NSObject {
     {
         headers[name] = String(describing: value)
     }
-    
-    open func setContentType(_ contentType: String)
-    {
-        headers[RESTContants.kDefineRESTRequestContentTypeKey] = contentType
-    }
-    
-    open func setAccept(_ accept: String)
-    {
-        headers[RESTContants.kDefineRESTRequestAcceptKey] = accept
-    }
-    
-    open func setAuthorization(_ authorization: String)
-    {
-        headers[RESTContants.kDefineRESTRequestAuthorizationKey] = authorization
-    }
      
     open func requestObject<T: Codable>() -> Observable<T?> {
         return baseRequest().autoMappingObject()
