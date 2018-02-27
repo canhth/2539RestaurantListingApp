@@ -1,0 +1,35 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+
+target 'ListingRestaurant' do
+    use_frameworks!
+    
+    inherit! :search_paths
+    pod 'Alamofire'
+    pod 'ObjectMapper'
+    pod 'SwiftyJSON'
+    pod 'RealmSwift'
+    
+    pod 'RxSwift'
+    pod 'RxCocoa'
+    pod 'Kingfisher', '~> 4.6'
+    pod 'KeychainAccess'
+    pod 'ViewAnimator'
+    
+    pod 'FoldingCell'
+    pod 'CT_RESTAPI', :path => 'LocalPods/CT_RESTAPI/'
+    
+    
+    # UNitests
+    target 'ListingRestaurantTests' do
+        
+        pod 'Quick', '~> 1.2'
+        pod 'Nimble', '~> 7.0'
+    end
+    
+    # UITests
+    target 'ListingRestaurantUITests' do
+        inherit! :search_paths
+    end
+    
+end
