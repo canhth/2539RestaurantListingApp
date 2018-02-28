@@ -12,9 +12,8 @@ import RxCocoa
 
 enum ValidationResult {
     case ok
-    case empty(message: String)
-    case validating
     case failed(message: String)
+    case empty(message: String)
 }
 
 enum SignupState {
@@ -22,7 +21,6 @@ enum SignupState {
 }
 
 protocol ValidationService {
-    func validateEmpty(_ fname: String) -> ValidationResult
     func validateEmail(_ email: String) -> ValidationResult
     func validatePassword(_ password: String) -> ValidationResult
 }
@@ -37,3 +35,4 @@ extension ValidationResult {
         }
     }
 }
+

@@ -8,11 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		03C83B1A2045648400DA5857 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C83B192045648400DA5857 /* AppDelegate.swift */; };
-		03C83B1C2045648400DA5857 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C83B1B2045648400DA5857 /* ViewController.swift */; };
+		03C83B1C2045648400DA5857 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C83B1B2045648400DA5857 /* ProfileViewController.swift */; };
 		03C83B1F2045648400DA5857 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03C83B1D2045648400DA5857 /* Main.storyboard */; };
 		03C83B242045648400DA5857 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03C83B222045648400DA5857 /* LaunchScreen.storyboard */; };
 		03C83B2F2045648400DA5857 /* ListingRestaurantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C83B2E2045648400DA5857 /* ListingRestaurantTests.swift */; };
 		03C83B3A2045648400DA5857 /* ListingRestaurantUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C83B392045648400DA5857 /* ListingRestaurantUITests.swift */; };
+		03C83B4920464FBE00DA5857 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C83B4820464FBE00DA5857 /* LoginViewModel.swift */; };
+		03C83B4B20464FD100DA5857 /* RestaurantListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C83B4A20464FD100DA5857 /* RestaurantListViewModel.swift */; };
+		03C83B4D2046569000DA5857 /* ValidateTextFieldStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C83B4C2046569000DA5857 /* ValidateTextFieldStackView.swift */; };
+		03C83B4F2046636600DA5857 /* BaseMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C83B4E2046636600DA5857 /* BaseMainViewController.swift */; };
+		03C83B512046A57300DA5857 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C83B502046A57300DA5857 /* Constants.swift */; };
+		03C83B562046AD2900DA5857 /* MainTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C83B552046AD2900DA5857 /* MainTabbarViewController.swift */; };
+		03C83B582046B6AA00DA5857 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C83B572046B6AA00DA5857 /* LoadingView.swift */; };
+		03C83B5B2046BFE300DA5857 /* Operation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C83B5A2046BFE300DA5857 /* Operation+Extension.swift */; };
 		232F637E9ED2B1E11511C618 /* Pods_ListingRestaurantUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77CAA391E59378B9AC4838E9 /* Pods_ListingRestaurantUITests.framework */; };
 		24CEE40C6B068428851C195C /* Pods_ListingRestaurant_ListingRestaurantTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53617FA6EED79709428F4893 /* Pods_ListingRestaurant_ListingRestaurantTests.framework */; };
 		694157880B0600761346901A /* Pods_ListingRestaurant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48E6E3335A373DA015D1AF9 /* Pods_ListingRestaurant.framework */; };
@@ -59,7 +67,7 @@
 /* Begin PBXFileReference section */
 		03C83B162045648400DA5857 /* ListingRestaurant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListingRestaurant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03C83B192045648400DA5857 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		03C83B1B2045648400DA5857 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		03C83B1B2045648400DA5857 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		03C83B1E2045648400DA5857 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		03C83B232045648400DA5857 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03C83B252045648400DA5857 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -69,6 +77,14 @@
 		03C83B352045648400DA5857 /* ListingRestaurantUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ListingRestaurantUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03C83B392045648400DA5857 /* ListingRestaurantUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingRestaurantUITests.swift; sourceTree = "<group>"; };
 		03C83B3B2045648400DA5857 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03C83B4820464FBE00DA5857 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		03C83B4A20464FD100DA5857 /* RestaurantListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListViewModel.swift; sourceTree = "<group>"; };
+		03C83B4C2046569000DA5857 /* ValidateTextFieldStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateTextFieldStackView.swift; sourceTree = "<group>"; };
+		03C83B4E2046636600DA5857 /* BaseMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMainViewController.swift; sourceTree = "<group>"; };
+		03C83B502046A57300DA5857 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		03C83B552046AD2900DA5857 /* MainTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarViewController.swift; sourceTree = "<group>"; };
+		03C83B572046B6AA00DA5857 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		03C83B5A2046BFE300DA5857 /* Operation+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Operation+Extension.swift"; sourceTree = "<group>"; };
 		0DD6F018FECA7085B9689E73 /* Pods-ListingRestaurant-ListingRestaurantTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListingRestaurant-ListingRestaurantTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ListingRestaurant-ListingRestaurantTests/Pods-ListingRestaurant-ListingRestaurantTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2EA1128863F93D0C25A20353 /* Pods-ListingRestaurantTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListingRestaurantTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ListingRestaurantTests/Pods-ListingRestaurantTests.release.xcconfig"; sourceTree = "<group>"; };
 		53617FA6EED79709428F4893 /* Pods_ListingRestaurant_ListingRestaurantTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ListingRestaurant_ListingRestaurantTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -157,17 +173,15 @@
 		03C83B182045648400DA5857 /* ListingRestaurant */ = {
 			isa = PBXGroup;
 			children = (
-				CE5ECD672045B7A8004BC308 /* AppComponents */,
 				CE5ECD602045B7A7004BC308 /* Extensions */,
 				CE5ECD652045B7A8004BC308 /* Resources */,
-				CE5ECD632045B7A7004BC308 /* Storyboards */,
 				CE5ECD662045B7A8004BC308 /* Utilities */,
+				CE5ECD632045B7A7004BC308 /* Storyboards */,
 				CE5ECD612045B7A7004BC308 /* Views */,
 				CE5ECD622045B7A7004BC308 /* Models */,
+				03C83B4720464F7B00DA5857 /* ViewModels */,
 				CE5ECD5F2045B7A7004BC308 /* ViewControllers */,
-				CE5ECD642045B7A8004BC308 /* ViewModels */,
 				03C83B192045648400DA5857 /* AppDelegate.swift */,
-				03C83B1B2045648400DA5857 /* ViewController.swift */,
 				03C83B252045648400DA5857 /* Info.plist */,
 			);
 			path = ListingRestaurant;
@@ -191,6 +205,49 @@
 			path = ListingRestaurantUITests;
 			sourceTree = "<group>";
 		};
+		03C83B4720464F7B00DA5857 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				03C83B4820464FBE00DA5857 /* LoginViewModel.swift */,
+				03C83B4A20464FD100DA5857 /* RestaurantListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		03C83B522046A63500DA5857 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CE5ECD832045BD0F004BC308 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		03C83B532046A64400DA5857 /* MainHome */ = {
+			isa = PBXGroup;
+			children = (
+				03C83B4E2046636600DA5857 /* BaseMainViewController.swift */,
+				03C83B552046AD2900DA5857 /* MainTabbarViewController.swift */,
+			);
+			path = MainHome;
+			sourceTree = "<group>";
+		};
+		03C83B542046A6AE00DA5857 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				03C83B1B2045648400DA5857 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		03C83B592046B84A00DA5857 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CE5ECD872045BD46004BC308 /* RestaurantCell.swift */,
+				CE5ECD882045BD46004BC308 /* RestaurantCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		C9EC8F16CF7E6B992E013EE6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,7 +262,9 @@
 		CE5ECD5F2045B7A7004BC308 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				CE5ECD832045BD0F004BC308 /* LoginViewController.swift */,
+				03C83B542046A6AE00DA5857 /* Profile */,
+				03C83B532046A64400DA5857 /* MainHome */,
+				03C83B522046A63500DA5857 /* Login */,
 				CE5ECD852045BD1C004BC308 /* RestaurantViewController.swift */,
 			);
 			path = ViewControllers;
@@ -221,6 +280,7 @@
 				CE5ECD702045BA10004BC308 /* UIButton+Extension.swift */,
 				CE5ECD722045BA2C004BC308 /* UIApplication+Extension.swift */,
 				CE5ECD742045BA4F004BC308 /* String+Extension.swift */,
+				03C83B5A2046BFE300DA5857 /* Operation+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -228,8 +288,9 @@
 		CE5ECD612045B7A7004BC308 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				CE5ECD872045BD46004BC308 /* RestaurantCell.swift */,
-				CE5ECD882045BD46004BC308 /* RestaurantCell.xib */,
+				03C83B592046B84A00DA5857 /* Cells */,
+				03C83B572046B6AA00DA5857 /* LoadingView.swift */,
+				03C83B4C2046569000DA5857 /* ValidateTextFieldStackView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -253,13 +314,6 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		CE5ECD642045B7A8004BC308 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
 		CE5ECD652045B7A8004BC308 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -274,15 +328,9 @@
 			children = (
 				CE5ECD782045BC14004BC308 /* Validate */,
 				CE5ECD8D2045BF6C004BC308 /* Helper.swift */,
+				03C83B502046A57300DA5857 /* Constants.swift */,
 			);
 			path = Utilities;
-			sourceTree = "<group>";
-		};
-		CE5ECD672045B7A8004BC308 /* AppComponents */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AppComponents;
 			sourceTree = "<group>";
 		};
 		CE5ECD782045BC14004BC308 /* Validate */ = {
@@ -467,7 +515,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		691892FDAF4DB69EF81CFEC1 /* [CP] Embed Pods Frameworks */ = {
@@ -477,36 +525,34 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ListingRestaurant-ListingRestaurantTests/Pods-ListingRestaurant-ListingRestaurantTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AMScrollingNavbar/AMScrollingNavbar.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/CT_RESTAPI/CT_RESTAPI.framework",
 				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
-				"${BUILT_PRODUCTS_DIR}/FoldingCell/FoldingCell.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/TPKeyboardAvoiding/TPKeyboardAvoiding.framework",
 				"${BUILT_PRODUCTS_DIR}/ViewAnimator/ViewAnimator.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AMScrollingNavbar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CT_RESTAPI.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FoldingCell.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TPKeyboardAvoiding.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ViewAnimator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
@@ -561,7 +607,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B55C9D1F6A5E8D1FD32D8E9D /* [CP] Copy Pods Resources */ = {
@@ -601,34 +647,32 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ListingRestaurant/Pods-ListingRestaurant-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AMScrollingNavbar/AMScrollingNavbar.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/CT_RESTAPI/CT_RESTAPI.framework",
 				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
-				"${BUILT_PRODUCTS_DIR}/FoldingCell/FoldingCell.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/TPKeyboardAvoiding/TPKeyboardAvoiding.framework",
 				"${BUILT_PRODUCTS_DIR}/ViewAnimator/ViewAnimator.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AMScrollingNavbar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CT_RESTAPI.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FoldingCell.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TPKeyboardAvoiding.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ViewAnimator.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -651,7 +695,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -662,22 +706,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE5ECD802045BCF2004BC308 /* User.swift in Sources */,
+				03C83B4B20464FD100DA5857 /* RestaurantListViewModel.swift in Sources */,
+				03C83B4F2046636600DA5857 /* BaseMainViewController.swift in Sources */,
 				CE5ECD862045BD1C004BC308 /* RestaurantViewController.swift in Sources */,
 				CE5ECD6D2045B888004BC308 /* UITextField+Extension.swift in Sources */,
 				CE5ECD7D2045BC14004BC308 /* ValidateProtocol.swift in Sources */,
+				03C83B512046A57300DA5857 /* Constants.swift in Sources */,
 				CE5ECD842045BD0F004BC308 /* LoginViewController.swift in Sources */,
 				CE5ECD8E2045BF6C004BC308 /* Helper.swift in Sources */,
+				03C83B562046AD2900DA5857 /* MainTabbarViewController.swift in Sources */,
 				CE5ECD752045BA4F004BC308 /* String+Extension.swift in Sources */,
 				CE5ECD892045BD46004BC308 /* RestaurantCell.swift in Sources */,
 				CE5ECD692045B824004BC308 /* UIViewController+Extension.swift in Sources */,
 				CE5ECD732045BA2C004BC308 /* UIApplication+Extension.swift in Sources */,
-				03C83B1C2045648400DA5857 /* ViewController.swift in Sources */,
+				03C83B1C2045648400DA5857 /* ProfileViewController.swift in Sources */,
+				03C83B5B2046BFE300DA5857 /* Operation+Extension.swift in Sources */,
+				03C83B4D2046569000DA5857 /* ValidateTextFieldStackView.swift in Sources */,
 				CE5ECD6F2045B9F2004BC308 /* UIColor+Extension.swift in Sources */,
 				CE5ECD6B2045B869004BC308 /* UIView+Extension.swift in Sources */,
+				03C83B582046B6AA00DA5857 /* LoadingView.swift in Sources */,
 				CE5ECD7C2045BC14004BC308 /* ValidateService.swift in Sources */,
 				CE5ECD822045BCFC004BC308 /* Restaurant.swift in Sources */,
 				CE5ECD7E2045BC14004BC308 /* BindingExtension.swift in Sources */,
 				03C83B1A2045648400DA5857 /* AppDelegate.swift in Sources */,
+				03C83B4920464FBE00DA5857 /* LoginViewModel.swift in Sources */,
 				CE5ECD712045BA10004BC308 /* UIButton+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -848,11 +900,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S4L5HY6Q7D;
 				INFOPLIST_FILE = ListingRestaurant/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = canh.tran.ListingRestaurant;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -864,11 +917,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S4L5HY6Q7D;
 				INFOPLIST_FILE = ListingRestaurant/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = canh.tran.ListingRestaurant;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

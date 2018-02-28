@@ -15,7 +15,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        if 1 == 1 { // AppComponents.sharedInstance.userInfo != nil {
+            let rootViewController = LoginViewController.instantiateFromStoryboard(StoryBoardName.login)
+            self.window!.rootViewController = rootViewController
+        } else {
+            let rootViewController = MainTabbarViewController.instantiateFromStoryboard(StoryBoardName.main)
+            self.window!.rootViewController = rootViewController
+        }
+        
         return true
     }
 
@@ -42,5 +50,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+    /**
+     Change rootViewController with animation
+     */
+    func switchRootViewController(_ rootViewController: UIViewController, animated: Bool, completion: (() -> Void)?) {
+        if animated && self.window!.rootViewController != nil {
+            
+            let snapshot = window!.snapshotView() ?? UIView()
+            rootViewController.view.addSubview(snapshot)
+            window!.rootViewController = rootViewController
+            UIView.animate(withDuration: 0.5, animations: { () -> Void in
+                snapshot.layer.opacity = 0
+                snapshot.layer.transform = CATransform3DMakeScale(1.5, 1.5, 1.5)
+                
+            }, completion: { (finished) -> Void in
+                snapshot.removeFromSuperview()
+                if (completion != nil) {
+                    completion!()
+                }
+            })
+        } else {
+            window!.rootViewController = rootViewController
+        }
+    }
+    
 }
 

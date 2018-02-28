@@ -7,15 +7,11 @@
 //
 
 import Foundation
-#if !RX_NO_MODULE
-    import RxSwift
-#endif
-
+import RxSwift
 
 class DefaultValidationService: ValidationService {
     
     static let sharedValidationService = DefaultValidationService()
-    
     
     // validation
     
@@ -25,25 +21,14 @@ class DefaultValidationService: ValidationService {
         if !email.isEmail() {
             return .failed(message: "Please enter correct email format")
         }
-        else if !email.contains("@babson.edu") && !email.contains("@gmail.com") {
-            return .failed(message: "This email is not supported by our system")
-        }
         return .ok
     }
     
     
-    func validateEmpty(_ fname: String) -> ValidationResult {
-        if fname.count == 0 {
-            return .empty(message: "This field can be empty")
-        } else {
-            return .ok
-        }
-    }
-    
     func validatePassword(_ password: String) -> ValidationResult {
         let numberOfCharacters = password.count
         if numberOfCharacters == 0 {
-            return .empty(message: "This field can be empty")
+            return .failed(message: "This field can be empty")
         }
         
         return .ok

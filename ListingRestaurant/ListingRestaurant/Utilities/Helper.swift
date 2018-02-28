@@ -19,7 +19,7 @@ class Helper {
                     return restaurants
                 }
             } catch {
-                // handle error
+                // handle error here
             }
         }
         return []

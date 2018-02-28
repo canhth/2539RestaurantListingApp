@@ -12,7 +12,7 @@ extension UIViewController {
     
     class func instantiateFromStoryboard() -> Self
     {
-        return instantiateFromStoryboardHelper(self, storyboardName: "Main")
+        return instantiateFromStoryboardHelper(self, storyboardName: StoryBoardName.main)
     }
     
     class func instantiateFromStoryboard(_ storyboardName: String) -> Self
