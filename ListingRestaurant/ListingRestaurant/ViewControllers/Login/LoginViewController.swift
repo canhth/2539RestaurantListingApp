@@ -12,6 +12,7 @@ import RxSwift
 
 class LoginViewController: UIViewController {
 
+    // MARK: Properties
     let disposeBag = DisposeBag()
     
     /* We will use Material Lib for UITextField error handling
@@ -24,6 +25,7 @@ class LoginViewController: UIViewController {
     
     private let loginViewModel = LoginViewModel()
     
+    // MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -35,7 +37,7 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
+    // MARK: Setups viewcontroller
     private func setupViewModel() {
         
         loginViewModel.setupLoginViewModel(loginButtonTap: loginButton.rx.tap.asObservable())

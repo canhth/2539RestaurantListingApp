@@ -26,6 +26,29 @@ extension String {
         return NSPredicate(format: "SELF MATCHES %@", emailRegex).evaluate(with: self)
     }
     
+    // Validate password has at least 1 uppercase, 1 lowercase, 1 number and 1 special character and length > 8
+    func validatePassword() -> Bool {
+        guard self.count >= 8 else { return false }
+        
+        let capitalLetterRegEx  = ".*[A-Z]+.*"
+        let texttest = NSPredicate(format:"SELF MATCHES %@", capitalLetterRegEx)
+        guard texttest.evaluate(with: self) else { return false }
+        
+        let normalLetterRegEx  = ".*[a-z]+.*"
+        let texttestNormal = NSPredicate(format:"SELF MATCHES %@", normalLetterRegEx)
+        guard texttestNormal.evaluate(with: self) else { return false }
+        
+        let numberRegEx  = ".*[0-9]+.*"
+        let texttest1 = NSPredicate(format:"SELF MATCHES %@", numberRegEx)
+        guard texttest1.evaluate(with: self) else { return false }
+        
+        let specialCharacterRegEx  = ".*[!&^%$#@()/_*+-]+.*"
+        let texttest2 = NSPredicate(format:"SELF MATCHES %@", specialCharacterRegEx)
+        guard texttest2.evaluate(with: self) else { return false }
+        
+        return true
+    }
+    
     /// Get localized string
     var localized: String! {
         let localizedString = NSLocalizedString(self, comment: "")

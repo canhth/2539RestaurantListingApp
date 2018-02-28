@@ -10,7 +10,6 @@ target 'ListingRestaurant' do
     pod 'RxCocoa'
     pod 'Kingfisher', '~> 4.6'
     pod 'KeychainAccess'
-    pod 'ViewAnimator'
     pod 'TPKeyboardAvoiding', '~> 1.3'
     pod 'IQKeyboardManagerSwift'
     pod 'AMScrollingNavbar'

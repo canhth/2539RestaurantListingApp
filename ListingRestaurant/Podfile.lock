@@ -18,7 +18,6 @@ PODS:
   - RxSwift (4.1.2)
   - SVProgressHUD (2.1.2)
   - TPKeyboardAvoiding (1.3.2)
-  - ViewAnimator (1.0.4)
 
 DEPENDENCIES:
   - Alamofire
@@ -33,7 +32,6 @@ DEPENDENCIES:
   - RxSwift
   - SVProgressHUD (= 2.1.2)
   - TPKeyboardAvoiding (~> 1.3)
-  - ViewAnimator
 
 EXTERNAL SOURCES:
   CT_RESTAPI:
@@ -53,8 +51,7 @@ SPEC CHECKSUMS:
   RxSwift: e49536837d9901277638493ea537394d4b55f570
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
   TPKeyboardAvoiding: cb69d5ddbe90ce0170e4bc2db1e5e41d4a3ad9a4
-  ViewAnimator: 1f3fa25f3c9010ab0dda06cf9e3e49a4b55834ff
 
-PODFILE CHECKSUM: 1e04cc6d973fe6b7da7cc64fcba855253b484718
+PODFILE CHECKSUM: 42403da04f461d8b8dcc2697ddfdfd713d1b664a
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.2.1

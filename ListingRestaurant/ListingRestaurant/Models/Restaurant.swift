@@ -8,6 +8,12 @@
 
 import UIKit
 
-class Restaurant: NSObject {
-
+struct Restaurant: Codable {
+    
+    var imageurl: String
+    var name: String
+    var address: String
+    var openinghours: String
+    
 }
+

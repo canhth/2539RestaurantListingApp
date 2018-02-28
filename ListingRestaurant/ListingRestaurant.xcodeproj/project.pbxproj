@@ -45,6 +45,10 @@
 		CE5ECD8C2045BED1004BC308 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5ECD8B2045BED1004BC308 /* Login.storyboard */; };
 		CE5ECD8E2045BF6C004BC308 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5ECD8D2045BF6C004BC308 /* Helper.swift */; };
 		CE5ECD902045C54B004BC308 /* restaurants.json in Resources */ = {isa = PBXBuildFile; fileRef = CE5ECD8F2045C54B004BC308 /* restaurants.json */; };
+		CE5ECD922046EE29004BC308 /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5ECD912046EE29004BC308 /* UITableViewCell+Extension.swift */; };
+		CE5ECD98204716EB004BC308 /* BaseUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5ECD97204716EB004BC308 /* BaseUITest.swift */; };
+		CE5ECD9D204717C6004BC308 /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5ECD9C204717C6004BC308 /* LoginTests.swift */; };
+		CE5ECD9F204717DE004BC308 /* XCUIElementUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5ECD9E204717DE004BC308 /* XCUIElementUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +119,10 @@
 		CE5ECD8B2045BED1004BC308 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		CE5ECD8D2045BF6C004BC308 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		CE5ECD8F2045C54B004BC308 /* restaurants.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = restaurants.json; sourceTree = "<group>"; };
+		CE5ECD912046EE29004BC308 /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
+		CE5ECD97204716EB004BC308 /* BaseUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUITest.swift; sourceTree = "<group>"; };
+		CE5ECD9C204717C6004BC308 /* LoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
+		CE5ECD9E204717DE004BC308 /* XCUIElementUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCUIElementUtil.swift; sourceTree = "<group>"; };
 		D379821176EC30FD35F92926 /* Pods-ListingRestaurant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListingRestaurant.release.xcconfig"; path = "Pods/Target Support Files/Pods-ListingRestaurant/Pods-ListingRestaurant.release.xcconfig"; sourceTree = "<group>"; };
 		D5745487996BE9C2B34224C8 /* Pods-ListingRestaurantUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListingRestaurantUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ListingRestaurantUITests/Pods-ListingRestaurantUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -199,6 +207,9 @@
 		03C83B382045648400DA5857 /* ListingRestaurantUITests */ = {
 			isa = PBXGroup;
 			children = (
+				CE5ECD96204716D4004BC308 /* Login */,
+				CE5ECD95204716C7004BC308 /* Helper */,
+				CE5ECD942047165D004BC308 /* BaseUITest */,
 				03C83B392045648400DA5857 /* ListingRestaurantUITests.swift */,
 				03C83B3B2045648400DA5857 /* Info.plist */,
 			);
@@ -262,10 +273,10 @@
 		CE5ECD5F2045B7A7004BC308 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				CE5ECD93204714F6004BC308 /* Restaurant */,
 				03C83B542046A6AE00DA5857 /* Profile */,
 				03C83B532046A64400DA5857 /* MainHome */,
 				03C83B522046A63500DA5857 /* Login */,
-				CE5ECD852045BD1C004BC308 /* RestaurantViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -281,6 +292,7 @@
 				CE5ECD722045BA2C004BC308 /* UIApplication+Extension.swift */,
 				CE5ECD742045BA4F004BC308 /* String+Extension.swift */,
 				03C83B5A2046BFE300DA5857 /* Operation+Extension.swift */,
+				CE5ECD912046EE29004BC308 /* UITableViewCell+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -341,6 +353,38 @@
 				CE5ECD7B2045BC14004BC308 /* BindingExtension.swift */,
 			);
 			path = Validate;
+			sourceTree = "<group>";
+		};
+		CE5ECD93204714F6004BC308 /* Restaurant */ = {
+			isa = PBXGroup;
+			children = (
+				CE5ECD852045BD1C004BC308 /* RestaurantViewController.swift */,
+			);
+			path = Restaurant;
+			sourceTree = "<group>";
+		};
+		CE5ECD942047165D004BC308 /* BaseUITest */ = {
+			isa = PBXGroup;
+			children = (
+				CE5ECD97204716EB004BC308 /* BaseUITest.swift */,
+			);
+			path = BaseUITest;
+			sourceTree = "<group>";
+		};
+		CE5ECD95204716C7004BC308 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				CE5ECD9E204717DE004BC308 /* XCUIElementUtil.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		CE5ECD96204716D4004BC308 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CE5ECD9C204717C6004BC308 /* LoginTests.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		EE54F4B0159E9DB369B381A5 /* Pods */ = {
@@ -515,7 +559,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		691892FDAF4DB69EF81CFEC1 /* [CP] Embed Pods Frameworks */ = {
@@ -607,7 +651,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		B55C9D1F6A5E8D1FD32D8E9D /* [CP] Copy Pods Resources */ = {
@@ -695,7 +739,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -718,6 +762,7 @@
 				CE5ECD752045BA4F004BC308 /* String+Extension.swift in Sources */,
 				CE5ECD892045BD46004BC308 /* RestaurantCell.swift in Sources */,
 				CE5ECD692045B824004BC308 /* UIViewController+Extension.swift in Sources */,
+				CE5ECD922046EE29004BC308 /* UITableViewCell+Extension.swift in Sources */,
 				CE5ECD732045BA2C004BC308 /* UIApplication+Extension.swift in Sources */,
 				03C83B1C2045648400DA5857 /* ProfileViewController.swift in Sources */,
 				03C83B5B2046BFE300DA5857 /* Operation+Extension.swift in Sources */,
@@ -746,6 +791,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE5ECD9D204717C6004BC308 /* LoginTests.swift in Sources */,
+				CE5ECD9F204717DE004BC308 /* XCUIElementUtil.swift in Sources */,
+				CE5ECD98204716EB004BC308 /* BaseUITest.swift in Sources */,
 				03C83B3A2045648400DA5857 /* ListingRestaurantUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

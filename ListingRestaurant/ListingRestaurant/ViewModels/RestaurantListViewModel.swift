@@ -7,7 +7,25 @@
 //
 
 import UIKit
+import RxSwift
+import CocoaLumberjack
 
 class RestaurantListViewModel {
 
+    // MARK: Private properties
+    private let disposeBag = DisposeBag()
+    
+    fileprivate(set) var restaurantsDataSource: Observable<[Restaurant]>!
+    
+    func requestRestaurantsDataSource() {
+        if let jsonData = Helper.getDataFromJSONFile(fileName: "restaurants", key: "restaurants") {
+            do {
+                let result = try JSONDecoder().decode([Restaurant].self, from: jsonData)
+                restaurantsDataSource = Observable<[Restaurant]>.just(result)
+            } catch {
+                DDLogInfo("Error when parsing JSON: \(error)")
+            }
+        }
+    }
+    
 }

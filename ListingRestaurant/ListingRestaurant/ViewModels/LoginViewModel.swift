@@ -9,19 +9,23 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import CT_RESTAPI
 
 class LoginViewModel {
-
+    
+    // MARK: Properties
     let disposeBag = DisposeBag()
     private let validationService = DefaultValidationService.sharedValidationService
     
-    fileprivate(set) var emailText = Variable<String>("")
-    fileprivate(set) var passwordText = Variable<String>("")
+    fileprivate(set) var emailText          = Variable<String>("")
+    fileprivate(set) var passwordText       = Variable<String>("")
     fileprivate(set) var isEnableNextButton: Observable<Bool>!
-    fileprivate(set) var validatedEmail = BehaviorSubject<ValidationResult>(value: .ok)
-    fileprivate(set) var validatedPassword = BehaviorSubject<ValidationResult>(value: .ok)
-    fileprivate(set) var isLoginSuccess = BehaviorSubject<Bool>(value: false)
-    private var loginButtonTapped = false
+    fileprivate(set) var validatedEmail     = BehaviorSubject<ValidationResult>(value: .ok)
+    fileprivate(set) var validatedPassword  = BehaviorSubject<ValidationResult>(value: .ok)
+    fileprivate(set) var isLoginSuccess     = BehaviorSubject<Bool>(value: false)
+    private var loginButtonTapped           = false
+    
+    // MARK: Functions
     
     func setupLoginViewModel(loginButtonTap: Observable<Void>) {
         let dataFlatmap = Observable.combineLatest(emailText.asObservable(), passwordText.asObservable()) { ($0, $1) }
@@ -52,11 +56,11 @@ class LoginViewModel {
             
             let isPassedValidation = (validationEmail.isValid && validationPassword.isValid)
             if isPassedValidation {
+                // Call API login here, but now force to loginSuccess
                 strongSelf.isLoginSuccess.onNext(true)
-                // Call API login here
-                
+                strongSelf.requestLoginAPI()
             } else {
-                // Throw error here
+                // Throw errors here
                 strongSelf.validatedEmail.onNext(validationEmail)
                 strongSelf.validatedPassword.onNext(validationPassword)
             }
@@ -66,4 +70,42 @@ class LoginViewModel {
             }).disposed(by: disposeBag)
     }
     
+    /* This is an example how to use my CT_RESTAPI
+     */
+    fileprivate func requestLoginAPI() {
+        
+        let apiManager = RESTApiClient(subPath: "login", functionName: "", method: .POST, endcoding: .URL)
+        apiManager.setQueryParam(LoginParam(email: "takehome@2359media.com", password: "1Faraday@").dictionary)
+        let obserable: Observable<User?> = apiManager.requestObject()
+        obserable.subscribe(onNext: { (item) in
+            print("Success")
+        }, onError: { (error) in
+            print("Error \(error)")
+        }).disposed(by: disposeBag)
+        
+        // Save fake token of user after login success
+        Helper.saveFakeToken(tokenString: "takehome@2359media.com-1Faraday@")
+    }
+    
 }
+
+
+class LoginParam: Codable {
+    
+    @objc var email: String = "hoangcanhsek6@gmail.com"
+    @objc var password: String = "hoangcanh1"
+    
+    init(email: String, password: String) {
+        self.email = email
+        self.password = password
+    }
+}
+
+
+
+
+
+
+
+
+

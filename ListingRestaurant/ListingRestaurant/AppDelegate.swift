@@ -6,21 +6,20 @@
 //  Copyright © 2018 Tran Hoang Canh. All rights reserved.
 //
 
-import UIKit
+import UIKit 
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        if 1 == 1 { // AppComponents.sharedInstance.userInfo != nil {
-            let rootViewController = LoginViewController.instantiateFromStoryboard(StoryBoardName.login)
+        if Helper.getFakeToken() {
+            let rootViewController = MainTabbarViewController.instantiateFromStoryboard(StoryBoardName.main)
             self.window!.rootViewController = rootViewController
         } else {
-            let rootViewController = MainTabbarViewController.instantiateFromStoryboard(StoryBoardName.main)
+            let rootViewController = LoginViewController.instantiateFromStoryboard(StoryBoardName.login)
             self.window!.rootViewController = rootViewController
         }
         
