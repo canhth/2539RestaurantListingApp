@@ -185,12 +185,9 @@
 				CE5ECD652045B7A8004BC308 /* Resources */,
 				CE5ECD662045B7A8004BC308 /* Utilities */,
 				CE5ECD632045B7A7004BC308 /* Storyboards */,
-				CE5ECD612045B7A7004BC308 /* Views */,
-				CE5ECD622045B7A7004BC308 /* Models */,
-				03C83B4720464F7B00DA5857 /* ViewModels */,
-				CE5ECD5F2045B7A7004BC308 /* ViewControllers */,
+				CE5ECD612045B7A7004BC308 /* CommonViews */,
+				CE5ECD5F2045B7A7004BC308 /* Sections */,
 				03C83B192045648400DA5857 /* AppDelegate.swift */,
-				03C83B252045648400DA5857 /* Info.plist */,
 			);
 			path = ListingRestaurant;
 			sourceTree = "<group>";
@@ -216,19 +213,13 @@
 			path = ListingRestaurantUITests;
 			sourceTree = "<group>";
 		};
-		03C83B4720464F7B00DA5857 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				03C83B4820464FBE00DA5857 /* LoginViewModel.swift */,
-				03C83B4A20464FD100DA5857 /* RestaurantListViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
 		03C83B522046A63500DA5857 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				CE5ECD832045BD0F004BC308 /* LoginViewController.swift */,
+				03C83B6320479C5400DA5857 /* Controllers */,
+				03C83B6120479C4700DA5857 /* Models */,
+				03C83B6220479C4E00DA5857 /* ViewModels */,
+				03C83B6020479C4200DA5857 /* Views */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -246,6 +237,9 @@
 			isa = PBXGroup;
 			children = (
 				03C83B1B2045648400DA5857 /* ProfileViewController.swift */,
+				03C83B6420479C7B00DA5857 /* Controllers */,
+				03C83B6520479C8200DA5857 /* ViewModels */,
+				03C83B6620479C8B00DA5857 /* Views */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -259,6 +253,91 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		03C83B5C20479B6C00DA5857 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				03C83B592046B84A00DA5857 /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		03C83B5D20479B7600DA5857 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE5ECD812045BCFC004BC308 /* Restaurant.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		03C83B5E20479B8700DA5857 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE5ECD852045BD1C004BC308 /* RestaurantViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		03C83B5F20479B9F00DA5857 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				03C83B4A20464FD100DA5857 /* RestaurantListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		03C83B6020479C4200DA5857 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				03C83B4C2046569000DA5857 /* ValidateTextFieldStackView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		03C83B6120479C4700DA5857 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE5ECD7F2045BCF2004BC308 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		03C83B6220479C4E00DA5857 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				03C83B4820464FBE00DA5857 /* LoginViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		03C83B6320479C5400DA5857 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE5ECD832045BD0F004BC308 /* LoginViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		03C83B6420479C7B00DA5857 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		03C83B6520479C8200DA5857 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		03C83B6620479C8B00DA5857 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		C9EC8F16CF7E6B992E013EE6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -270,15 +349,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CE5ECD5F2045B7A7004BC308 /* ViewControllers */ = {
+		CE5ECD5F2045B7A7004BC308 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
 				CE5ECD93204714F6004BC308 /* Restaurant */,
+				03C83B522046A63500DA5857 /* Login */,
 				03C83B542046A6AE00DA5857 /* Profile */,
 				03C83B532046A64400DA5857 /* MainHome */,
-				03C83B522046A63500DA5857 /* Login */,
 			);
-			path = ViewControllers;
+			path = Sections;
 			sourceTree = "<group>";
 		};
 		CE5ECD602045B7A7004BC308 /* Extensions */ = {
@@ -297,23 +376,12 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		CE5ECD612045B7A7004BC308 /* Views */ = {
+		CE5ECD612045B7A7004BC308 /* CommonViews */ = {
 			isa = PBXGroup;
 			children = (
-				03C83B592046B84A00DA5857 /* Cells */,
 				03C83B572046B6AA00DA5857 /* LoadingView.swift */,
-				03C83B4C2046569000DA5857 /* ValidateTextFieldStackView.swift */,
 			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		CE5ECD622045B7A7004BC308 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				CE5ECD7F2045BCF2004BC308 /* User.swift */,
-				CE5ECD812045BCFC004BC308 /* Restaurant.swift */,
-			);
-			path = Models;
+			path = CommonViews;
 			sourceTree = "<group>";
 		};
 		CE5ECD632045B7A7004BC308 /* Storyboards */ = {
@@ -329,6 +397,7 @@
 		CE5ECD652045B7A8004BC308 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				03C83B252045648400DA5857 /* Info.plist */,
 				CE5ECD762045BA9A004BC308 /* Assets.xcassets */,
 				CE5ECD8F2045C54B004BC308 /* restaurants.json */,
 			);
@@ -358,7 +427,10 @@
 		CE5ECD93204714F6004BC308 /* Restaurant */ = {
 			isa = PBXGroup;
 			children = (
-				CE5ECD852045BD1C004BC308 /* RestaurantViewController.swift */,
+				03C83B5E20479B8700DA5857 /* Controllers */,
+				03C83B5D20479B7600DA5857 /* Models */,
+				03C83B5F20479B9F00DA5857 /* ViewModels */,
+				03C83B5C20479B6C00DA5857 /* Views */,
 			);
 			path = Restaurant;
 			sourceTree = "<group>";
