@@ -85,6 +85,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C12-A2-wky">
                                 <rect key="frame" x="18" y="479" width="339" height="55"/>
                                 <color key="backgroundColor" red="0.99607843137254903" green="0.30588235294117649" blue="0.31372549019607843" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="profileLogOutButton"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="Ygf-H6-dW0"/>
                                 </constraints>

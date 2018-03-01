@@ -55,4 +55,10 @@ class BaseUITest: XCTestCase {
         self.waitForExpectations(timeout: timeOut, handler: nil)
     }
     
+    func inputTextToTextField(_ element: XCUIElement, text: String) {
+        waitUntilElementExists(element)
+        element.tap()
+        element.typeText(text)
+    }
+    
 }
