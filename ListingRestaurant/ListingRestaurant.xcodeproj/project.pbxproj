@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		037243F6204F9A790033C285 /* BaseRealmObjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037243F2204F9A790033C285 /* BaseRealmObjectModel.swift */; };
+		037243F7204F9A790033C285 /* ResultExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037243F3204F9A790033C285 /* ResultExtension.swift */; };
+		037243F8204F9A790033C285 /* RealmExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037243F4204F9A790033C285 /* RealmExtension.swift */; };
+		037243F9204F9A790033C285 /* ObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037243F5204F9A790033C285 /* ObjectExtension.swift */; };
 		03C83B1A2045648400DA5857 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C83B192045648400DA5857 /* AppDelegate.swift */; };
 		03C83B1C2045648400DA5857 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C83B1B2045648400DA5857 /* ProfileViewController.swift */; };
 		03C83B1F2045648400DA5857 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03C83B1D2045648400DA5857 /* Main.storyboard */; };
@@ -71,6 +75,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		037243F2204F9A790033C285 /* BaseRealmObjectModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRealmObjectModel.swift; sourceTree = "<group>"; };
+		037243F3204F9A790033C285 /* ResultExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultExtension.swift; sourceTree = "<group>"; };
+		037243F4204F9A790033C285 /* RealmExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmExtension.swift; sourceTree = "<group>"; };
+		037243F5204F9A790033C285 /* ObjectExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectExtension.swift; sourceTree = "<group>"; };
 		03C83B162045648400DA5857 /* ListingRestaurant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListingRestaurant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03C83B192045648400DA5857 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03C83B1B2045648400DA5857 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +168,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		037243F1204F9A790033C285 /* BaseModel */ = {
+			isa = PBXGroup;
+			children = (
+				037243F2204F9A790033C285 /* BaseRealmObjectModel.swift */,
+				037243F3204F9A790033C285 /* ResultExtension.swift */,
+				037243F4204F9A790033C285 /* RealmExtension.swift */,
+				037243F5204F9A790033C285 /* ObjectExtension.swift */,
+			);
+			path = BaseModel;
+			sourceTree = "<group>";
+		};
 		03C83B0D2045648400DA5857 = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +204,7 @@
 		03C83B182045648400DA5857 /* ListingRestaurant */ = {
 			isa = PBXGroup;
 			children = (
+				037243F1204F9A790033C285 /* BaseModel */,
 				CE5ECD602045B7A7004BC308 /* Extensions */,
 				CE5ECD652045B7A8004BC308 /* Resources */,
 				CE5ECD662045B7A8004BC308 /* Utilities */,
@@ -829,12 +849,14 @@
 			files = (
 				CE5ECD802045BCF2004BC308 /* User.swift in Sources */,
 				03C83B4B20464FD100DA5857 /* RestaurantListViewModel.swift in Sources */,
+				037243F7204F9A790033C285 /* ResultExtension.swift in Sources */,
 				03C83B4F2046636600DA5857 /* BaseMainViewController.swift in Sources */,
 				CE5ECD862045BD1C004BC308 /* RestaurantViewController.swift in Sources */,
 				CE5ECD6D2045B888004BC308 /* UITextField+Extension.swift in Sources */,
 				CE5ECD7D2045BC14004BC308 /* ValidateProtocol.swift in Sources */,
 				03C83B512046A57300DA5857 /* Constants.swift in Sources */,
 				CE5ECD842045BD0F004BC308 /* LoginViewController.swift in Sources */,
+				037243F8204F9A790033C285 /* RealmExtension.swift in Sources */,
 				CE5ECD8E2045BF6C004BC308 /* Helper.swift in Sources */,
 				03C83B562046AD2900DA5857 /* MainTabbarViewController.swift in Sources */,
 				CE5ECD752045BA4F004BC308 /* String+Extension.swift in Sources */,
@@ -848,8 +870,10 @@
 				CE5ECD6F2045B9F2004BC308 /* UIColor+Extension.swift in Sources */,
 				CE5ECD6B2045B869004BC308 /* UIView+Extension.swift in Sources */,
 				03C83B582046B6AA00DA5857 /* LoadingView.swift in Sources */,
+				037243F6204F9A790033C285 /* BaseRealmObjectModel.swift in Sources */,
 				CE5ECD7C2045BC14004BC308 /* ValidateService.swift in Sources */,
 				CE5ECD822045BCFC004BC308 /* Restaurant.swift in Sources */,
+				037243F9204F9A790033C285 /* ObjectExtension.swift in Sources */,
 				CE5ECD7E2045BC14004BC308 /* BindingExtension.swift in Sources */,
 				03C83B1A2045648400DA5857 /* AppDelegate.swift in Sources */,
 				03C83B4920464FBE00DA5857 /* LoginViewModel.swift in Sources */,
