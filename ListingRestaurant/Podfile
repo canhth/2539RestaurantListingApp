@@ -14,15 +14,12 @@ target 'ListingRestaurant' do
     pod 'RxCocoa'
     pod 'Kingfisher', '~> 4.6'
     pod 'KeychainAccess'
-    pod 'ViewAnimator'
     
-    pod 'FoldingCell'
     pod 'CT_RESTAPI', :path => 'LocalPods/CT_RESTAPI/'
     
     
     # UNitests
     target 'ListingRestaurantTests' do
-        
         pod 'Quick', '~> 1.2'
         pod 'Nimble', '~> 7.0'
     end
