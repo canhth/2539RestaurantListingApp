@@ -69,7 +69,7 @@ open class RESTError: Codable {
     
     open static func parseError(_ responseData: Data?, error: Error?) -> RESTError {
         
-        var restError: RESTError = RESTError.init(typeError: .noNetwork)
+        var restError: RESTError = RESTError(typeError: .unauthorized)
         
         if let responseData = responseData {
             do {
